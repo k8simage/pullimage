@@ -28,3 +28,6 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/storage-provisioner:latest gc
 
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.2
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.2 gcr.io/kubernetes-helm/tiller:v2.8.2
+
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/busybox:1.25.0
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/busybox:1.25.0 busybox:1.25.0
