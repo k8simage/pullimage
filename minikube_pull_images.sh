@@ -25,3 +25,6 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/pause:latest gcr.io/google_co
 
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/storage-provisioner:latest
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/storage-provisioner:latest gcr.io/k8s-minikube/storage-provisioner:v1.8.1
+
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.2
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.2 gcr.io/kubernetes-helm/tiller:v2.8.2
