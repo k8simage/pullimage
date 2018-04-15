@@ -1,33 +1,50 @@
 #!/bin/bash
-
-# sidecar
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-sidecar:latest
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-sidecar:latest k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.5
-
-# k8s-dns-kube-dns
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-kube-dns:latest 
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-kube-dns:latest k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.5
-
-# k8s-dns-dnsmasq-nanny
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-dnsmasq-nanny:latest
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-dnsmasq-nanny:latest k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.5
+# For k8s 0.10 in minikube 0.26 
 
 # kube-addon-manager
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:latest
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:latest gcr.io/google-containers/kube-addon-manager:v6.5
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6 k8s.gcr.io/kube-addon-manager:v8.6
 
-# kubernetes-dashboard
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard:latest
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard:latest k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.1
+# pause-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/pause-amd64:3.1
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/pause-amd64:3.1 k8s.gcr.io/pause-amd64:3.1
 
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/pause:latest
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/pause:latest gcr.io/google_containers/pause-amd64:3.0
+# kubernetes-dashboard-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard-amd64:v1.8.1
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard-amd64:v1.8.1 k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.1
 
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/storage-provisioner:latest
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/storage-provisioner:latest gcr.io/k8s-minikube/storage-provisioner:v1.8.1
+# k8s-dns-dnsmasq-nanny-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-dnsmasq-nanny-amd64:1.14.5
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-dnsmasq-nanny-amd64:1.14.5 k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.5
 
+# k8s-dns-sidecar-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-sidecar-amd64:1.14.5
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-sidecar-amd64:1.14.5 k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.5
+
+# k8s-dns-kube-dns-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-kube-dns-amd64:1.14.5
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-kube-dns-amd64:1.14.5 k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.5
+
+# storage-provisioner
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/storage-provisioner:v1.8.1
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/storage-provisioner:v1.8.1 gcr.io/k8s-minikube/storage-provisioner:v1.8.1
+
+# heapster-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/heapster-amd64:v1.5.0
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/heapster-amd64:v1.5.0 k8s.gcr.io/heapster-amd64:v1.5.0
+
+# heapster-influxdb-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/heapster-influxdb-amd64:v1.3.3
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/heapster-influxdb-amd64:v1.3.3 k8s.gcr.io/heapster-influxdb-amd64:v1.3.3
+
+# heapster-grafana-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/heapster-grafana-amd64:v4.4.3
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/heapster-grafana-amd64:v4.4.3 k8s.gcr.io/heapster-grafana-amd64:v4.4.3
+
+# defaultbackend
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/defaultbackend:1.4
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/defaultbackend:1.4 k8s.gcr.io/defaultbackend:1.4
+
+# tiller
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.2
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.2 gcr.io/kubernetes-helm/tiller:v2.8.2
-
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/busybox:1.25.0
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/busybox:1.25.0 busybox:1.25.0
