@@ -1,5 +1,5 @@
 #!/bin/bash
-# For k8s 0.10 in minikube 0.26 
+# For k8s 1.10.0 in minikube 0.26 
 
 # kube-addon-manager
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6
