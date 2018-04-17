@@ -52,3 +52,7 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.9.0-rc3 gcr.io/kube
 # coredns
 docker pull registry.cn-qingdao.aliyuncs.com/dck8s/coredns:1.0.6
 docker tag registry.cn-qingdao.aliyuncs.com/dck8s/coredns:1.0.6 registry.hub.docker.com/coredns/coredns:1.0.6
+
+# service-catalog
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/service-catalog:v0.1.14
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/service-catalog:v0.1.14 quay.io/kubernetes-service-catalog/service-catalog:v0.1.14
