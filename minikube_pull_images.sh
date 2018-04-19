@@ -1,6 +1,10 @@
 #!/bin/bash
 # For k8s 1.9.5 in kubeadm
 
+# cluster-proportional-autoscaler-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/cluster-proportional-autoscaler-amd64:1.1.2
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/cluster-proportional-autoscaler-amd64:1.1.2 gcr.io/google_containers/cluster-proportional-autoscaler-amd64:1.1.2
+
 # hyperkube
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5 gcr.io/google-containers/hyperkube:v1.9.5
