@@ -6,8 +6,8 @@ docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6 k8s.gcr.io/kube-addon-manager:v8.6
 
 # pause-amd64
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/pause-amd64:3.1
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/pause-amd64:3.1 k8s.gcr.io/pause-amd64:3.1
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/pause-amd64:3.0
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/pause-amd64:3.0 gcr.io/google_containers/pause-amd64:3.0
 
 # kubernetes-dashboard-amd64
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard-amd64:v1.8.1
