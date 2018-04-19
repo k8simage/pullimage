@@ -1,5 +1,5 @@
 #!/bin/bash
-# For k8s 1.10.0 in minikube 0.26 
+# For k8s 1.9.5 in kubeadm
 
 # kube-addon-manager
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6
@@ -56,3 +56,7 @@ docker tag registry.cn-qingdao.aliyuncs.com/dck8s/coredns:1.0.6 registry.hub.doc
 # service-catalog
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/service-catalog:v0.1.14
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/service-catalog:v0.1.14 quay.io/kubernetes-service-catalog/service-catalog:v0.1.14
+
+# fluentd-elasticsearch
+ docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/fluentd-elasticsearch:1.22
+ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/fluentd-elasticsearch:1.22 gcr.io/google_containers/fluentd-elasticsearch:1.22
