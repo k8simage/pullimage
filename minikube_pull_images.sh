@@ -5,6 +5,10 @@
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/etcd:v3.2.4
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/etcd:v3.2.4 quay.io/coreos/etcd:v3.2.4
 
+# ctl
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/ctl:v1.6.3
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/ctl:v1.6.3 quay.io/calico/ctl:v1.6.3
+
 # kube-addon-manager
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6 k8s.gcr.io/kube-addon-manager:v8.6
