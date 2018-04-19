@@ -1,6 +1,10 @@
 #!/bin/bash
 # For k8s 1.9.5 in kubeadm
 
+# hyperkube
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5 gcr.io/google-containers/hyperkube:v1.9.5
+
 # etcd
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/etcd:v3.2.4
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/etcd:v3.2.4 quay.io/coreos/etcd:v3.2.4
