@@ -1,6 +1,10 @@
 #!/bin/bash
 # For k8s 1.9.5 in kubeadm
 
+# etcd
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/etcd:v3.2.4
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/etcd:v3.2.4 quay.io/coreos/etcd:v3.2.4
+
 # kube-addon-manager
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-addon-manager:v8.6 k8s.gcr.io/kube-addon-manager:v8.6
