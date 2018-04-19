@@ -54,8 +54,8 @@ docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/defaultbackend:1.4
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/defaultbackend:1.4 k8s.gcr.io/defaultbackend:1.4
 
 # tiller
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.2
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.2 gcr.io/kubernetes-helm/tiller:v2.8.2
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.1
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/tiller:v2.8.1 gcr.io/kubernetes-helm/tiller:v2.8.1
 
 # coredns
 docker pull registry.cn-qingdao.aliyuncs.com/dck8s/coredns:1.0.6
