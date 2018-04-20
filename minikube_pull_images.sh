@@ -31,7 +31,7 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-sidecar-amd64:1.14.8 
 
 # k8s-dns-kube-dns-amd64
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-kube-dns-amd64:1.14.8
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-kube-dns-amd64:1.14.8 k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.8
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-kube-dns-amd64:1.14.8 gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.8
 
 # storage-provisioner
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/storage-provisioner:v1.8.1
