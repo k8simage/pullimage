@@ -88,3 +88,7 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/node:v2.6.8 quay.io/calico/no
 # elasticsearch
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/elasticsearch:v2.4.1
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/elasticsearch:v2.4.1 gcr.io/google_containers/elasticsearch:v2.4.1
+
+# cni
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/cni:v1.11.4
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/cni:v1.11.4 quay.io/calico/cni:v1.11.4
