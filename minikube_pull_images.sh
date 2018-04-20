@@ -80,3 +80,7 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5 gcr.io/googl
 # kibana
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kibana:v4.6.1
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kibana:v4.6.1 gcr.io/google_containers/kibana:v4.6.1
+
+# node
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/node:v2.6.8
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/node:v2.6.8 quay.io/calico/node:v2.6.8
