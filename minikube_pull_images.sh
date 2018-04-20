@@ -84,3 +84,7 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kibana:v4.6.1 gcr.io/google_c
 # node
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/node:v2.6.8
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/node:v2.6.8 quay.io/calico/node:v2.6.8
+
+# elasticsearch
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/elasticsearch:v2.4.1
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/elasticsearch:v2.4.1 gcr.io/google_containers/elasticsearch:v2.4.1
