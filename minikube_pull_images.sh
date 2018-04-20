@@ -1,14 +1,6 @@
 #!/bin/bash
 # For k8s 1.9.5 in kubeadm
 
-# cluster-proportional-autoscaler-amd64
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/cluster-proportional-autoscaler-amd64:1.1.2
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/cluster-proportional-autoscaler-amd64:1.1.2 gcr.io/google_containers/cluster-proportional-autoscaler-amd64:1.1.2
-
-# hyperkube
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5 gcr.io/google-containers/hyperkube:v1.9.5
-
 # etcd
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/etcd:v3.2.4
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/etcd:v3.2.4 quay.io/coreos/etcd:v3.2.4
@@ -76,3 +68,15 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/service-catalog:v0.1.14 quay.
 # fluentd-elasticsearch
  docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/fluentd-elasticsearch:1.22
  docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/fluentd-elasticsearch:1.22 gcr.io/google_containers/fluentd-elasticsearch:1.22
+
+# cluster-proportional-autoscaler-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/cluster-proportional-autoscaler-amd64:1.1.2
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/cluster-proportional-autoscaler-amd64:1.1.2 gcr.io/google_containers/cluster-proportional-autoscaler-amd64:1.1.2
+
+# hyperkube
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/hyperkube:v1.9.5 gcr.io/google-containers/hyperkube:v1.9.5
+
+# kibana
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kibana:v4.6.1
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kibana:v4.6.1 gcr.io/google_containers/kibana:v4.6.1
