@@ -56,3 +56,11 @@ docker tag registry.cn-qingdao.aliyuncs.com/dck8s/coredns:1.0.6 registry.hub.doc
 # service-catalog
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/service-catalog:v0.1.14
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/service-catalog:v0.1.14 quay.io/kubernetes-service-catalog/service-catalog:v0.1.14
+
+# kube-controller-manager-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-controller-manager-amd64:v1.10.0
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-controller-manager-amd64:v1.10.0 k8s.gcr.io/kube-controller-manager-amd64:v1.10.0
+
+# kube-apiserver-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-apiserver-amd64:v1.10.0
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-apiserver-amd64:v1.10.0 k8s.gcr.io/kube-apiserver-amd64:v1.10.0
