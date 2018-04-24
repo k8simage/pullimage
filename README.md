@@ -22,3 +22,5 @@ registry.hub.docker.com/coredns/coredns:1.0.6
 quay.io/kubernetes-service-catalog/service-catalog:v0.1.14
 k8s.gcr.io/kube-controller-manager-amd64:v1.10.0
 k8s.gcr.io/kube-apiserver-amd64:v1.10.0
+k8s.gcr.io/kube-scheduler-amd64:v1.10.0
+k8s.gcr.io/etcd-amd64:3.1.12

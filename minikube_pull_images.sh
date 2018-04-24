@@ -64,3 +64,11 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-controller-manager-amd64
 # kube-apiserver-amd64
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-apiserver-amd64:v1.10.0
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-apiserver-amd64:v1.10.0 k8s.gcr.io/kube-apiserver-amd64:v1.10.0
+
+# kube-scheduler-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-scheduler-amd64:v1.10.0
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-scheduler-amd64:v1.10.0 k8s.gcr.io/kube-scheduler-amd64:v1.10.0
+
+# etcd-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/etcd-amd64:3.1.12
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/etcd-amd64:3.1.12 k8s.gcr.io/etcd-amd64:3.1.12
