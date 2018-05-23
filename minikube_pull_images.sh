@@ -76,3 +76,7 @@ docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/etcd-amd64:3.1.12 k8s.gcr.io/
 # kube-proxy-amd64
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kube-proxy-amd64:v1.10.0
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kube-proxy-amd64:v1.10.0 k8s.gcr.io/kube-proxy-amd64:v1.10.0
+
+# metrics-server-amd64
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/metrics-server-amd64:v0.2.1
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/metrics-server-amd64:v0.2.1 k8s.gcr.io/metrics-server-amd64:v0.2.1
