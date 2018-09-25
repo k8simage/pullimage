@@ -10,8 +10,8 @@ docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/pause-amd64:3.1
 docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/pause-amd64:3.1 k8s.gcr.io/pause-amd64:3.1
 
 # kubernetes-dashboard-amd64
-docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard-amd64:v1.8.1
-docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard-amd64:v1.8.1 k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.1
+docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard-amd64:v1.10.0
+docker tag registry.cn-hangzhou.aliyuncs.com/dck8s/kubernetes-dashboard-amd64:v1.10.0 k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.0
 
 # k8s-dns-dnsmasq-nanny-amd64
 docker pull registry.cn-hangzhou.aliyuncs.com/dck8s/k8s-dns-dnsmasq-nanny-amd64:1.14.5
